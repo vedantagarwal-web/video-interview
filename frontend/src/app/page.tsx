@@ -94,7 +94,7 @@ export default function Home() {
                   {Object.entries(analysis.scores).map(([key, value]) => (
                     <li key={key} className="capitalize flex justify-between">
                       <span>{key.replace(/_/g, ' ')}:</span>
-                      <span className="font-mono">{value}</span>
+                      <span className="font-mono">{String(value)}</span>
                     </li>
                   ))}
                 </ul>
